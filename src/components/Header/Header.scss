@@ -1,0 +1,26 @@
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1%;
+    grid-area: header;
+
+    h1 {
+        font-family: 'Comforter Brush', cursive;
+        font-size: 125px;
+        position: absolute;
+        right: 50vh;
+        top: -20vh;
+        transform: rotate(-8deg);
+        opacity: 0.4;
+    }
+
+    .contacts {
+        align-self: center;
+        justify-self: end;
+    }
+
+    img {
+        align-self: center;
+    }
+
+}

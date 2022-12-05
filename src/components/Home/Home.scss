@@ -1,0 +1,22 @@
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1%;
+    grid-area: header;
+
+    h1 {
+        font-family: 'Water Brush', cursive;
+
+        font-style: italic;
+    }
+
+    .contacts {
+        align-self: center;
+        justify-self: end;
+    }
+
+    img {
+        align-self: center;
+    }
+
+}

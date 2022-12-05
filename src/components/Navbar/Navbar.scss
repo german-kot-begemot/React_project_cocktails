@@ -1,0 +1,18 @@
+.navbar-content {
+    display: grid;
+    grid-area: nav;
+    font-size: 22px;
+
+    ul {
+        list-style: none;
+        justify-self: left;
+        padding: 10px;
+
+        li {
+            text-align: left;
+            margin: 10px;
+
+
+        }
+    }
+}

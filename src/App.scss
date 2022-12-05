@@ -1,0 +1,60 @@
+// @font-face {
+//   font-family: 'Yanone Kaffeesatz';
+//   src: local('Yanone Kaffeesatz'), url('../public/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
+// }
+
+a {
+  text-decoration: none;
+  color: beige;
+}
+
+.App {
+  font-family: 'Yanone Kaffeesatz';
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url('../public/images/derevo-fon-1.jpg');
+  display: grid;
+  grid-template-areas:
+      "header header"
+      "nav content";
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  color: beige;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

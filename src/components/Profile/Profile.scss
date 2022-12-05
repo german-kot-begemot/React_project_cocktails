@@ -1,0 +1,44 @@
+.profile-content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 150px 300px 150px;
+    gap: 5vh;
+
+    .profile-top-pic {
+        // height: 150px;
+        // grid-area: top-pic;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: none;
+        }
+    }
+
+    .cocktail {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .cocktail-pic {
+            max-width: 300px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .cocktail-description {
+            ul{
+                list-style: none;
+                padding: 0;
+                text-align: left;
+
+                li {
+                    margin: 3vh 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
