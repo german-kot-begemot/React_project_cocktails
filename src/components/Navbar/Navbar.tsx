@@ -1,10 +1,10 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
-import './Navbar.scss';
+import styles from './Navbar.module.scss';
 
 const Navbar = () => {
   return (
-    <div className="navbar-content">
+    <div className={styles.navbar}>
       <ul>
         <li>
           <a href="#">Profile</a>

@@ -1,4 +1,4 @@
-.header-content {
+.content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1%;
@@ -12,11 +12,6 @@
         top: -20vh;
         transform: rotate(-8deg);
         opacity: 0.4;
-    }
-
-    .contacts {
-        align-self: center;
-        justify-self: end;
     }
 
     img {
