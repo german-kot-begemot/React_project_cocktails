@@ -1,25 +1,38 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.scss';
+import Home from '../../components/Navbar/Home/Home';
+import Coctails from '../../components/Navbar/Coctails/Coctails';
+import BarmenPost from '../../components/Navbar/BarmenPost/BarmenPost';
+import BarMusic from '../../components/Navbar/BarMusic/BarMusic';
+import News from '../../components/Navbar/News/News';
+import Profile from '../../components/Navbar/Profile/Profile';
+import Settings from '../../components/Navbar/Settings/Settings';
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <ul>
         <li>
-          <a href="#">Profile</a>
+          <Home />
         </li>
         <li>
-          <a href="#">Messages</a>
+          <Coctails />
         </li>
         <li>
-          <a href="#">News</a>
+          <BarmenPost />
         </li>
         <li>
-          <a href="#">Music</a>
+          <BarMusic />
         </li>
         <li>
-          <a href="#">Settings</a>
+          <News />
+        </li>
+        <li>
+          <Profile />
+        </li>
+        <li>
+          <Settings />
         </li>
       </ul>
     </div>

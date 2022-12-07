@@ -3,7 +3,11 @@ import React from 'react';
 import styles from './News.module.scss';
 
 const News = () => {
-  console.log;
+  return (
+    <div>
+      <p>bla-bla</p>
+    </div>
+  );
 };
 
 export default News;

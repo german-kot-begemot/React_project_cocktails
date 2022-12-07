@@ -3,7 +3,11 @@ import React from 'react';
 import styles from './Profile.module.scss';
 
 const Profile = () => {
-  console.log;
+  return (
+    <div>
+      <p>bla-bla</p>
+    </div>
+  );
 };
 
 export default Profile;

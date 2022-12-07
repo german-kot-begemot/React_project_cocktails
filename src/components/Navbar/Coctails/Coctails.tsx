@@ -1,18 +1,18 @@
 import React from 'react';
-import './Profile.scss';
+import styles from './Coctails.module.scss';
 
-const Profile = () => {
+const Coctails = () => {
   return (
-    <div className="profile-content">
-      <div className="profile-top-pic">
+    <div className={styles.coctailContent}>
+      <div className={styles.coctailTopPic}>
         <img src="images/whisky-3638148_960_720.jpg" alt="" />
       </div>
 
-      <div className="cocktail">
-        <div className="cocktail-pic">
+      <div className={styles.cocktail}>
+        <div className={styles.cocktailPic}>
           <img src="images/cuba-libre-1184268_960_720.jpg" alt="" />
         </div>
-        <div className="cocktail-description">
+        <div className={styles.cocktailDescription}>
           <h2>Cuba Libre</h2>
           <ul>
             <li>5 cl of white rum</li>
@@ -28,17 +28,8 @@ const Profile = () => {
           </p>
         </div>
       </div>
-
-      <div className="сomments">
-        <h2>Comments</h2>
-        <label>
-          <input type="textarea"></input>
-          <button>Send</button>
-        </label>
-        <div>Klingt gut!</div>
-      </div>
     </div>
   );
 };
 
-export default Profile;
+export default Coctails;

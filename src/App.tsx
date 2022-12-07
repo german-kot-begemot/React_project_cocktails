@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
+// import NotFound from './components/NotFound/NotFound';
 import './App.scss';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div data-testid="app" className="App">
       <Header />
       <Navbar />
-      <Profile />
+      {/* <NotFound /> */}
     </div>
   );
 }

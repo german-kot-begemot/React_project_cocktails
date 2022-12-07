@@ -1,10 +1,10 @@
-.profile-content {
+.coctailContent {
     grid-area: content;
     display: grid;
     grid-template-rows: 150px 300px 150px;
     gap: 5vh;
 
-    .profile-top-pic {
+    .coctailTopPic {
         // height: 150px;
         // grid-area: top-pic;
 
@@ -19,7 +19,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
 
-        .cocktail-pic {
+        .cocktailPic {
             max-width: 300px;
 
             img {
@@ -28,7 +28,7 @@
             }
         }
 
-        .cocktail-description {
+        .cocktailDescription {
             ul{
                 list-style: none;
                 padding: 0;
