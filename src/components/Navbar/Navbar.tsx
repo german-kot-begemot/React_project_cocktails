@@ -1,38 +1,45 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.scss';
-import Home from '../../components/Navbar/Home/Home';
-import Coctails from '../../components/Navbar/Coctails/Coctails';
-import BarmenPost from '../../components/Navbar/BarmenPost/BarmenPost';
-import BarMusic from '../../components/Navbar/BarMusic/BarMusic';
-import News from '../../components/Navbar/News/News';
-import Profile from '../../components/Navbar/Profile/Profile';
-import Settings from '../../components/Navbar/Settings/Settings';
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <ul>
         <li>
-          <Home />
+          <NavLink className={styles.home} to="/" end>
+            Home
+          </NavLink>
         </li>
         <li>
-          <Coctails />
+          <NavLink className={styles.about} to="/coctails" end>
+            Coctails
+          </NavLink>
         </li>
         <li>
-          <BarmenPost />
+          <NavLink className={styles.barmenPost} to="/form" end>
+            BarmenPost
+          </NavLink>
         </li>
         <li>
-          <BarMusic />
+          <NavLink className={styles.barMusic} to="/form" end>
+            BarMusic
+          </NavLink>
         </li>
         <li>
-          <News />
+          <NavLink className={styles.news} to="/news" end>
+            News
+          </NavLink>
         </li>
         <li>
-          <Profile />
+          <NavLink className={styles.profile} to="/form" end>
+            Profile
+          </NavLink>
         </li>
         <li>
-          <Settings />
+          <NavLink className={styles.settings} to="/form" end>
+            Settings
+          </NavLink>
         </li>
       </ul>
     </div>
@@ -40,3 +47,10 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+{
+  /*  */
+}
+{
+  /* <Route path="*" element={<NotFound />} /> */
+}
