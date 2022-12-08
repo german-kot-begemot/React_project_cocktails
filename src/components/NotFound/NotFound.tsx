@@ -1,10 +1,14 @@
 import React from 'react';
-import './NotFound.css';
+import styles from './NotFound.module.scss';
 
 function NotFound() {
   return (
-    <div data-testid="notfound">
-      <img src="images/monsta.jpg" className="monsta404" alt="monsta" />
+    <div data-testid="notFound">
+      <img
+        src="images/notfound/not_found.jpg"
+        className={styles.notFound}
+        alt="notFound"
+      />
     </div>
   );
 }

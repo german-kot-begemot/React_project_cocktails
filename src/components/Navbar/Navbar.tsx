@@ -12,17 +12,17 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.about} to="/coctails" end>
+          <NavLink className={styles.coctails} to="/coctails" end>
             Coctails
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.barmenPost} to="/form" end>
+          <NavLink className={styles.barmenPost} to="/barmenpost" end>
             BarmenPost
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.barMusic} to="/form" end>
+          <NavLink className={styles.barMusic} to="/barmusic" end>
             BarMusic
           </NavLink>
         </li>
@@ -32,12 +32,12 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.profile} to="/form" end>
+          <NavLink className={styles.profile} to="/profile" end>
             Profile
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.settings} to="/form" end>
+          <NavLink className={styles.settings} to="/settings" end>
             Settings
           </NavLink>
         </li>
@@ -47,10 +47,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /*  */
-}
-{
-  /* <Route path="*" element={<NotFound />} /> */
-}

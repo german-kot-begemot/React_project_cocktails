@@ -2,4 +2,11 @@
     display: grid;
     grid-area: nav;
     font-size: 22px;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        margin-left: 20px;
+        line-height: 1.5;
+    }
 }
