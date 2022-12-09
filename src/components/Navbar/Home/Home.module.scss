@@ -1,3 +1,21 @@
 .header{
     background-image: url(../../../../public/images/home/barmen-kartinki-27.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+
+    blockquote {
+        font-family: 'Comforter Brush', cursive;
+        font-size: 4em;
+        color: #70B6BE;
+        width: 35%;
+        font-weight: bold;
+        margin-top: 22%;
+        text-align: left;
+
+        span {
+            text-align: right;
+        }
+    }
 }

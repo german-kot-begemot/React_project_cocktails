@@ -5,7 +5,9 @@ import styles from './Home.module.scss';
 const Home = () => {
   return (
     <div className={styles.header}>
-      <blockquote>People mix cocktails, and cocktails mix people</blockquote>
+      <blockquote>
+        People mix cocktails, and cocktails mix <span>people</span>
+      </blockquote>
     </div>
   );
 };

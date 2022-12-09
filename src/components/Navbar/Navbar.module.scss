@@ -1,7 +1,7 @@
 .navbar {
     display: grid;
     grid-area: nav;
-    font-size: 22px;
+    font-size: 30px;
     ul {
         list-style-type: none;
         padding: 0;
@@ -9,4 +9,16 @@
         margin-left: 20px;
         line-height: 1.5;
     }
+}
+a {
+    &:hover,
+&:focus{
+    color: #70B6BE;
+    transition: color 0.5s, text-shadow 0.8s;
+    position: relative;
+    text-shadow: 0 0 16px #07383f;
+};
+&:active{
+    color: #387178;
+};
 }
