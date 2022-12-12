@@ -13,7 +13,9 @@ a {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  background-image: url('../public/images/derevo-fon-1.jpg');
+  // background-image: url('../public/images/derevo-fon-1.jpg');
+  background: black;
+  // text-shadow: 3px 3px #07383f;
   display: grid;
   grid-template-areas:
       "header header"

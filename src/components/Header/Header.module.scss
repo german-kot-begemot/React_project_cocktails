@@ -6,13 +6,15 @@
 
     h1 {
         font-family: 'Comforter Brush', cursive;
-        font-size: 125px;
+        font-size: 10em;
         position: absolute;
-        right: 12%;
-        top: -80px;
+        right: 9%;
+        top: -100px;
         transform: rotate(-8deg);
         opacity: 0.4;
-        color: #387178;
+        color: #ecf2f3;
+        text-shadow: 3px 5px #07383f;
+        z-index: 3;
     }
 
     img {

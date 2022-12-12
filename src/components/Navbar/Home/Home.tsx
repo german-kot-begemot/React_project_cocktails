@@ -4,7 +4,7 @@ import styles from './Home.module.scss';
 
 const Home = () => {
   return (
-    <div className={styles.header}>
+    <div className={styles.main}>
       <blockquote>
         People mix cocktails, and cocktails mix <span>people</span>
       </blockquote>
