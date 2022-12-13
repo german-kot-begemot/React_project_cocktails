@@ -1,5 +1,6 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+// import PostDetails from '../PostInfo/PostDetails/PostDetails';
 import styles from './BarmenPost.module.scss';
 import Post from './Post/Post';
 
@@ -8,12 +9,24 @@ const BarmenPost = () => {
     <div>
       <div></div>
       <div className={styles.posts}>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+        <NavLink to="/barmenpost/postdetails" end>
+          <Post />
+        </NavLink>
+        <NavLink to="/barmenpost/postdetails" end>
+          <Post />
+        </NavLink>
+        <NavLink to="/barmenpost/postdetails" end>
+          <Post />
+        </NavLink>
+        <NavLink to="/barmenpost/postdetails" end>
+          <Post />
+        </NavLink>
+        <NavLink to="/barmenpost/postdetails" end>
+          <Post />
+        </NavLink>
+        <NavLink to="/barmenpost/postdetails" end>
+          <Post />
+        </NavLink>
       </div>
     </div>
   );

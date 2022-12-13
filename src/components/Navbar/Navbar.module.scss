@@ -1,25 +1,27 @@
 .navbar {
-    display: grid;
-    grid-area: nav;
-    font-size: 30px;
-    text-shadow: 3px 3px #07383f;
-    ul {
-        list-style-type: none;
-        padding: 0;
-        text-align: left;
-        margin-left: 20px;
-        line-height: 1.5;
-    }
+  display: grid;
+  grid-area: nav;
+  font-size: 30px;
+  text-shadow: 3px 3px #07383f;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 1.5;
+  }
 }
 a {
-    &:hover,
-&:focus{
-    color: #70B6BE;
+  transition: color 0.5s, text-shadow 0.8s;
+
+  &:hover,
+  &:focus {
+    color: #70b6be;
     transition: color 0.5s, text-shadow 0.8s;
     position: relative;
     text-shadow: 0 0 16px #07383f;
-};
-&:active{
+  }
+  &:active {
     color: #387178;
-};
+  }
 }
