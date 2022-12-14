@@ -1,44 +1,7 @@
-.coctailContent {
-    grid-area: content;
-    display: grid;
-    grid-template-rows: 150px 300px 150px;
-    gap: 5vh;
-
-    .coctailTopPic {
-        // height: 150px;
-        // grid-area: top-pic;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: none;
-        }
-    }
-
-    .cocktail {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-
-        .cocktailPic {
-            max-width: 300px;
-
-            img {
-                width: 100%;
-                border-radius: 10px;
-            }
-        }
-
-        .cocktailDescription {
-            ul{
-                list-style: none;
-                padding: 0;
-                text-align: left;
-
-                li {
-                    margin: 3vh 0;
-                    font-size: 20px;
-                }
-            }
-        }
-    }
+.cardHolder {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(5, 300px);
+  gap: 20px;
+  margin-top: 50px;
 }

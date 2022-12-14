@@ -1,15 +1,34 @@
 .item {
   font-size: 16px;
   text-align: left;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 50px auto;
+  gap: 0 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px dotted beige;
 
   .avatar {
-    width: 25px;
-    height: 25px;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    grid-row: 1 / 4;
+    align-self: center;
   }
   h3 {
     font-size: 18px;
+    margin: 0;
+  }
+  p {
+    grid-column: 2;
+    margin: 0;
   }
   span {
     text-align: right;
+    grid-column: 2;
+    margin: 0;
   }
 }

@@ -1,0 +1,20 @@
+.card {
+  border: 1px solid #387178;
+  border-radius: 20px;
+  background: #011a1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cocktailPhoto img {
+  max-width: 200px;
+  max-height: 160px;
+  border-radius: 10px;
+  width: 140px;
+  object-fit: cover;
+  object-position: top;
+}
+.cocktailName h1 {
+  font-family: 'Comforter Brush', cursive;
+}

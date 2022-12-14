@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './PostDetails.module.scss';
 import Comment from '../Comment/Comment';
+import CommentForm from '../CommentForm/CommentForm';
 
 const PostDetails = () => {
   return (
     <div className={styles.item}>
       <img src="images/postdetails/post1.jpg" alt="" />
       <h1>ColaWeizen und andere Möglichkeiten, Bier mit Cola zu trinken</h1>
-      <h2>супер подробности</h2>
       <p>
         It is believed that German teenagers were the first to mix beer with
         Coca Cola at parties. By trial and error, the Germans have identified
@@ -31,7 +31,10 @@ const PostDetails = () => {
         Do not shake or stir, otherwise the cocktail will splash out from the
         glass. Drink in small sips.
       </p>
-      <p>Like</p>
+      <p className={styles.like}>Like</p>
+      <div>
+        <CommentForm />
+      </div>
       <div className={styles.comments}>
         <Comment />
         <Comment />

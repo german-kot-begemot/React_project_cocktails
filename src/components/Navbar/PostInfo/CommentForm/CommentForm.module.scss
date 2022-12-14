@@ -1,0 +1,27 @@
+.form {
+  text-align: left;
+  width: 80%;
+  form {
+    width: 102%;
+  }
+
+  textarea {
+    width: 99%;
+    height: 100px;
+    background: #07383f;
+    border-radius: 5px;
+    border: 1px dotted gray;
+    color: beige;
+  }
+  .btnHolder {
+    text-align: right;
+
+    button {
+      width: 120px;
+      height: 35px;
+      background: gray;
+      border-radius: 5px;
+      margin: 10px 0 20px 10px;
+    }
+  }
+}
