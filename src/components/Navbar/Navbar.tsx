@@ -32,6 +32,11 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink className={styles.myBar} to="/mybar" end>
+            My Bar
+          </NavLink>
+        </li>
+        <li>
           <NavLink className={styles.profile} to="/profile" end>
             Profile
           </NavLink>

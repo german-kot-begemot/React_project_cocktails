@@ -12,6 +12,7 @@ import News from './components/Navbar/News/News';
 import Profile from './components/Navbar/Profile/Profile';
 import Settings from './components/Navbar/Settings/Settings';
 import PostDetails from './components/Navbar/PostInfo/PostDetails/PostDetails';
+import MyBar from './components/Navbar/MyBar/MyBar';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/barmenposts" element={<BarmenPost />} />
         <Route path="/barmusic" element={<BarMusic />} />
         <Route path="/news" element={<News />} />
+        <Route path="/mybar" element={<MyBar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/barmenpost/postdetails" element={<PostDetails />} />
