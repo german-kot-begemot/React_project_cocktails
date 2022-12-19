@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 // import PostDetails from '../PostInfo/PostDetails/PostDetails';
-import styles from './BarmenPost.module.scss';
+import styles from './Trends.module.scss';
 import Post from './Post/Post';
 
-const BarmenPost = () => {
+const Trends = () => {
   return (
     <div>
       <div></div>
@@ -32,4 +32,4 @@ const BarmenPost = () => {
   );
 };
 
-export default BarmenPost;
+export default Trends;

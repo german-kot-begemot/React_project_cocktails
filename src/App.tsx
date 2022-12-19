@@ -6,12 +6,12 @@ import Navbar from './components/Navbar/Navbar';
 import NotFound from './components/NotFound/NotFound';
 import Home from './components/Navbar/Home/Home';
 import Coctails from './components/Navbar/Coctails/Coctails';
-import BarmenPost from './components/Navbar/BarmenPost/BarmenPost';
+import BarmenPost from './components/Navbar/Trends/Trends';
 import BarMusic from './components/Navbar/BarMusic/BarMusic';
 import News from './components/Navbar/News/News';
 import Profile from './components/Navbar/Profile/Profile';
 import Settings from './components/Navbar/Settings/Settings';
-import PostDetails from './components/Navbar/PostInfo/PostDetails/PostDetails';
+import PostDetails from './components/Navbar/Trends/PostInfo/PostDetails/PostDetails';
 import MyBar from './components/Navbar/MyBar/MyBar';
 
 function App() {
