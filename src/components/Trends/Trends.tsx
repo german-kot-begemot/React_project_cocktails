@@ -9,22 +9,22 @@ const Trends = () => {
     <div>
       <div></div>
       <div className={styles.posts}>
-        <NavLink to="/barmenpost/postdetails" end>
+        <NavLink to="/trends/postdetails" end>
           <Post />
         </NavLink>
-        <NavLink to="/barmenpost/postdetails" end>
+        <NavLink to="/trends/postdetails" end>
           <Post />
         </NavLink>
-        <NavLink to="/barmenpost/postdetails" end>
+        <NavLink to="/trends/postdetails" end>
           <Post />
         </NavLink>
-        <NavLink to="/barmenpost/postdetails" end>
+        <NavLink to="/trends/postdetails" end>
           <Post />
         </NavLink>
-        <NavLink to="/barmenpost/postdetails" end>
+        <NavLink to="/trends/postdetails" end>
           <Post />
         </NavLink>
-        <NavLink to="/barmenpost/postdetails" end>
+        <NavLink to="/trends/postdetails" end>
           <Post />
         </NavLink>
       </div>

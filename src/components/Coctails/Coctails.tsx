@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Coctails.module.scss';
 import Card from './Card/Card';
-import { cocktailsData } from '../../../cocktailsData';
+import { cocktailsData } from '../../cocktailsData';
 import { NavLink } from 'react-router-dom';
 
 const Coctails = () => {

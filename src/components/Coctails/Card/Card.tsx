@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Card.module.scss';
-import { Cocktail } from '../../../../cocktailCard';
+import { Cocktail } from '../../../cocktailCard';
 
 const Card = (props: Cocktail) => {
   return (

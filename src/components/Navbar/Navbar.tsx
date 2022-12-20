@@ -17,8 +17,8 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.barmenPost} to="/barmenposts" end>
-            Barmen Post
+          <NavLink className={styles.barmenPost} to="/trends" end>
+            Trends
           </NavLink>
         </li>
         <li>
