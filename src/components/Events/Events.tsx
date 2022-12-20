@@ -1,8 +1,8 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
-import styles from './BarMusic.module.scss';
+import styles from './Events.module.scss';
 
-const BarMusic = () => {
+const Events = () => {
   return (
     <div>
       <p>bla-bla</p>
@@ -10,4 +10,4 @@ const BarMusic = () => {
   );
 };
 
-export default BarMusic;
+export default Events;

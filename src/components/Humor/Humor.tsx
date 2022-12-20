@@ -1,8 +1,8 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
-import styles from './Settings.module.scss';
+import styles from './Humor.module.scss';
 
-const Settings = () => {
+const Humor = () => {
   return (
     <div>
       <p>bla-bla</p>
@@ -10,4 +10,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default Humor;

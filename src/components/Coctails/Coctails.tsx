@@ -8,13 +8,14 @@ const Coctails = () => {
   return (
     <div className={styles.cardHolder}>
       {cocktailsData.map((cocktail) => (
-        <Card
-          id={cocktail.id}
-          key={cocktail.id}
-          name={cocktail.name}
-          recipe={cocktail.recipe}
-          imageUrl={cocktail.imageUrl}
-        />
+        <NavLink key={cocktail.id} to={`/coctails/carddetails`}>
+          <Card
+            id={cocktail.id}
+            name={cocktail.name}
+            recipe={cocktail.recipe}
+            imageUrl={cocktail.imageUrl}
+          />
+        </NavLink>
       ))}
     </div>
   );
@@ -23,3 +24,19 @@ const Coctails = () => {
 export default Coctails;
 
 // const [items, setItems] = useState<Cocktail[]>([]);
+
+// const Coctails = () => {
+//   return (
+//     <div className={styles.cardHolder}>
+//       {cocktailsData.map((cocktail) => (
+//         <Card
+//           id={cocktail.id}
+//           key={cocktail.id}
+//           name={cocktail.name}
+//           recipe={cocktail.recipe}
+//           imageUrl={cocktail.imageUrl}
+//         />
+//       ))}
+//     </div>
+//   );
+// };

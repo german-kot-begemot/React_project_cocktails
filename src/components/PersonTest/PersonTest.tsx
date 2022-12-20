@@ -1,8 +1,8 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
-import styles from './News.module.scss';
+import styles from './PersonTest.module.scss';
 
-const News = () => {
+const PersonTest = () => {
   return (
     <div>
       <p>bla-bla</p>
@@ -10,4 +10,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default PersonTest;

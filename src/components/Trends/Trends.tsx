@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import PostDetails from '../PostInfo/PostDetails/PostDetails';
+import PostDetails from './PostDetails/PostDetails';
 import styles from './Trends.module.scss';
 import Post from './Post/Post';
 

@@ -7,12 +7,14 @@ import NotFound from './components/NotFound/NotFound';
 import Home from './components/Home/Home';
 import Coctails from './components/Coctails/Coctails';
 import Trends from './components/Trends/Trends';
-import BarMusic from './components/BarMusic/BarMusic';
-import News from './components/News/News';
-import Profile from './components/Profile/Profile';
-import Settings from './components/Settings/Settings';
-import PostDetails from './components/Trends/PostDetails/PostDetails';
+import Humor from './components/Humor/Humor';
 import MyBar from './components/MyBar/MyBar';
+import PostDetails from './components/Trends/PostDetails/PostDetails';
+import CardDetails from './components/Coctails/CardDetails/CardDetails';
+
+// import News from './components/Events/Events';
+// import Profile from './components/Profile/Profile';
+// import Settings from './components/Messages/Messages';
 
 function App() {
   return (
@@ -23,13 +25,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/coctails" element={<Coctails />} />
         <Route path="/trends" element={<Trends />} />
-        <Route path="/barmusic" element={<BarMusic />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/humor" element={<Humor />} />
         <Route path="/mybar" element={<MyBar />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/trends/postdetails" element={<PostDetails />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/trends/postdetails" element={<PostDetails />} />
+        <Route path="/coctails/carddetails" element={<CardDetails />} />
+
+        {/* <Route path="/news" element={<News />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/settings" element={<Settings />} />*/}
       </Routes>
     </div>
   );
