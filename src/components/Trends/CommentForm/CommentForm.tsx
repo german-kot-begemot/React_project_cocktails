@@ -3,10 +3,20 @@ import styles from './CommentForm.module.scss';
 
 const CommentForm = () => {
   const newCommentRef = useRef<HTMLTextAreaElement>(null);
-  const addComment = () => {
+
+  const resetBtn = () => {
+    if (newCommentRef.current?.value) {
+      newCommentRef.current.value = '';
+    }
+  };
+
+  const addComment = (event: any) => {
+    event.preventDefault();
     if (newCommentRef.current !== null) {
-      const text = newCommentRef.current.value;
-      console.log(text);
+      console.log(newCommentRef.current?.value);
+      alert('Your comment has been published!');
+      newCommentRef.current.value = '';
+      console.log(newCommentRef.current.value);
     }
   };
 
@@ -20,7 +30,9 @@ const CommentForm = () => {
           placeholder="Insert your Comment"
         ></textarea>
         <div className={styles.btnHolder}>
-          <button type="button">Reset</button>
+          <button onClick={resetBtn} type="button">
+            Reset
+          </button>
           <button onClick={addComment} type="submit" data-testid="sbmt-btn">
             Submit
           </button>

@@ -17,33 +17,18 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.barmenPost} to="/trends" end>
+          <NavLink className={styles.trends} to="/trends" end>
             Trends
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.barMusic} to="/barmusic" end>
-            Bar Music
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className={styles.news} to="/news" end>
-            News
+          <NavLink className={styles.humor} to="/humor" end>
+            Humor
           </NavLink>
         </li>
         <li>
           <NavLink className={styles.myBar} to="/mybar" end>
             My Bar
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className={styles.profile} to="/profile" end>
-            Profile
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className={styles.settings} to="/settings" end>
-            Settings
           </NavLink>
         </li>
       </ul>
