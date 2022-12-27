@@ -5,13 +5,19 @@
     width: 102%;
   }
 
-  textarea {
+  .textarea,
+  .input {
     width: 99%;
     height: 100px;
     background: #07383f;
     border-radius: 5px;
     border: 1px dotted gray;
     color: beige;
+  }
+  .input {
+    width: 40%;
+    height: 40px;
+    margin-bottom: 20px;
   }
   .btnHolder {
     text-align: right;

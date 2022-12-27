@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './PostDetails.module.scss';
 import Comment from '../Comment/Comment';
+import { Commentary as CommentInterface } from '../../../models/comment';
 import CommentForm from '../CommentForm/CommentForm';
 
 const PostDetails = () => {
+  const [comments, setComments] = useState<CommentInterface[]>([]);
+
+  const onCommentAdd = (comment: { name: string; text: string }) => {
+    setComments(comments.concat({ ...comment, id: Math.random() }));
+  };
+
   return (
     <div className={styles.item}>
       <img src="images/postdetails/post1.jpg" alt="" />
@@ -32,14 +39,13 @@ const PostDetails = () => {
         glass. Drink in small sips.
       </p>
       <p className={styles.like}>Like</p>
-      <div>
-        <CommentForm />
+      <div className={styles.CommentForm}>
+        <CommentForm onSubmit={(comment) => onCommentAdd(comment)} />
       </div>
-      <div className={styles.comments}>
-        <Comment />
-        <Comment />
-        <Comment />
-        <Comment />
+      <div className={styles.CommentsHolder}>
+        {comments.map((comment) => (
+          <Comment key={comment.id} name={comment.name} text={comment.text} />
+        ))}
       </div>
     </div>
   );
