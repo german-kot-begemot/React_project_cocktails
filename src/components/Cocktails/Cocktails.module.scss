@@ -1,0 +1,15 @@
+.cardHolder {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(5, 300px);
+  gap: 3em;
+  margin-top: 50px;
+
+  .link {
+    text-shadow: 0 0 16px #b5d9de;
+    transition: all 0.5s linear;
+  }
+  .link:hover {
+    transform: scale(1.2, 1.2);
+  }
+}

@@ -2,13 +2,14 @@
 
 @font-face {
   font-family: 'Yanone Kaffeesatz';
-  src: local('Yanone Kaffeesatz'), url('../public/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
+  src: local('Yanone Kaffeesatz'),
+    url('../public/fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
 }
 
-// @font-face {
-//   font-family: 'Comforter Brush', cursive;
-//   src: local('Comforter Brush'), url('../public/fonts/ComforterBrush-Regular.ttf') format('truetype');
-// }
+@font-face {
+  font-family: 'Bandriya';
+  src: local('Bandriya'), url('../public/fonts/Bandriya.ttf') format('truetype');
+}
 
 body {
   margin: 0;
@@ -17,9 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // background-image: url('../public/images/grunge-2710970_960_720.jpg');
   background: black;
-  // text-shadow: 3px 3px #07383f;
 }
 
 code {

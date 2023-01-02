@@ -12,7 +12,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className={styles.coctails} to="/coctails" end>
+          <NavLink className={styles.cocktails} to="/cocktails" end>
             Coctails
           </NavLink>
         </li>
