@@ -13,7 +13,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink className={styles.cocktails} to="/cocktails" end>
-            Coctails
+            Cocktails
           </NavLink>
         </li>
         <li>

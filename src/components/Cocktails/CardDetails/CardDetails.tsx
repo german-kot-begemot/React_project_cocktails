@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CardDetails.module.scss';
+import { findById } from '../../../api';
+import { useParams } from 'react-router-dom';
+import { Cocktail } from '../../../models/cocktailCard';
 
 const CardDetails = () => {
+  const params = useParams();
+  const [coct, setCoct] = useState<Cocktail | null>(null);
+
+  useEffect(() => {
+    const getCoc = async () => {
+      const cocktail = await findById(params.id ?? '');
+
+      console.log(cocktail);
+      setCoct(cocktail);
+    };
+
+    getCoc();
+    //fetch cocktail
+  }, []);
+
+  console.log(params);
   return (
     <div className={styles.item}>
       <img src="/images/cocktails/drink-aperol.jpg" alt="" />
-      <h1> Aperol Spritz </h1>
+      <h1></h1>
       <p>
         According to one version, spritz appeared in Venice in the middle of the
         XIX century at a time when Venice was part of the Austrian Empire, was

@@ -1,5 +1,4 @@
 .card {
-  border: 1px solid #387178;
   border-radius: 20px;
   background: #011a1d;
   display: flex;
@@ -7,21 +6,34 @@
   align-items: center;
   flex-direction: column;
   min-height: 300px;
+  box-shadow: inset 0px 0px 1px 1px rgb(19 71 67 / 50%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#011214),
+    to(#453d4f)
+  );
+}
+.card:hover {
+  box-shadow: inset 0px 0px 15px 15px rgb(185 158 189 / 30%);
+  transition: all 0.7s linear;
 }
 .cocktailPhoto {
   width: 85%;
 
   img {
-    // max-width: 200px;
-    // max-height: 160px;
     width: 100%;
     border-radius: 10px;
-    // width: 140px;
     object-fit: cover;
     object-position: top;
   }
 }
 .cocktailName h1 {
-  font-family: 'Bandriya';
-  font-size: 20px;
+  // font-family: 'Bandriya';
+  font-family: 'Barbie Love';
+  font-size: 30px;
+  font-weight: 100;
 }
+
+// background: -webkit-gradient(linear, left top, left bottom, from(#011214), to(#453d4f));

@@ -29,7 +29,7 @@ function App() {
         <Route path="/mybar" element={<MyBar />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/trends/postdetails" element={<PostDetails />} />
-        <Route path="/cocktails/carddetails" element={<CardDetails />} />
+        <Route path="/cocktails/:id" element={<CardDetails />} />
 
         {/* <Route path="/news" element={<News />} />
         <Route path="/profile" element={<Profile />} />

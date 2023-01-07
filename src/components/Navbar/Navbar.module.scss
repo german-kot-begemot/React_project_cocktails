@@ -13,10 +13,12 @@
 }
 a {
   transition: color 0.5s, text-shadow 0.8s;
+  font-family: 'Barbie Love';
+  font-size: 45px;
 
   &:hover,
   &:focus {
-    color: #70b6be;
+    color: #145a6e;
     transition: color 0.5s, text-shadow 0.8s;
     position: relative;
     text-shadow: 0 0 16px #07383f;

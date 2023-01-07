@@ -5,7 +5,7 @@
 
 a {
   text-decoration: none;
-  color: beige;
+  color: rgb(186, 243, 233);
 }
 
 .App {
@@ -18,8 +18,8 @@ a {
   // text-shadow: 3px 3px #07383f;
   display: grid;
   grid-template-areas:
-      "header header"
-      "nav content";
+    'header header'
+    'nav content';
   grid-template-rows: 80px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
