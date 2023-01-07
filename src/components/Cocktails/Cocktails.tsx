@@ -5,6 +5,7 @@ import { Cocktail } from '../../models/cocktailCard';
 import { NavLink } from 'react-router-dom';
 import { fetchAllCocktails, findByTitle } from '../../api';
 import SearchCards from './SearchCards/SearchCards';
+import NotFound from '../NotFound/NotFound';
 
 const Cocktails = () => {
   const [cocktais, setCocktails] = useState<Cocktail[]>([]);
@@ -28,8 +29,10 @@ const Cocktails = () => {
         <div className={styles.searchWrapper}>
           <SearchCards onSearch={searchByTitle} />
         </div>
+        <NotFound />
         <div className={styles.cardHolder}>
-          <p>nothing found,bro</p>
+          {/* <NotFound /> */}
+          {/* <p>nothing found,bro</p> */}
         </div>
       </div>
     );
