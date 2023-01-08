@@ -3,5 +3,5 @@ export interface Cocktail {
   name: string;
   recipe: string;
   imageUrl: string;
-  ingredients: { [key: string]: string };
+  ingredients: { [key: string]: string | null };
 }

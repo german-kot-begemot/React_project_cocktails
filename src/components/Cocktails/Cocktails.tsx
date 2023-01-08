@@ -9,21 +9,25 @@ import NotFound from '../NotFound/NotFound';
 
 const Cocktails = () => {
   const [cocktais, setCocktails] = useState<Cocktail[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchAll = async () => {
       const cards = await fetchAllCocktails();
+      setIsLoading(false);
       setCocktails(cards);
     };
     fetchAll();
   }, []);
 
   const searchByTitle = async (title: string) => {
+    setIsLoading(true);
     const cards = await findByTitle(title);
     setCocktails(cards);
+    setIsLoading(false);
   };
 
-  if (cocktais.length === 0) {
+  if (cocktais.length === 0 && !isLoading) {
     return (
       <div className={styles.wrapper}>
         <div className={styles.searchWrapper}>

@@ -10,21 +10,33 @@ export interface CocktailDto {
   strDrinkAlternate: null;
   strTags: null;
   strVideo: null;
-  strCategory: 'Cocktail';
+  strCategory: string;
   strIBA: null;
-  strAlcoholic: 'Alcoholic';
-  strGlass: 'Cocktail glass';
+  strAlcoholic: string;
+  strGlass: string;
   strInstructions: string;
-  strDrinkThumb: 'https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg';
+  strDrinkThumb: string;
   [ingredientKey: IngredientKey]: string | null;
   [measureKey: MeasureKey]: string | null;
   strImageSource: null;
   strImageAttribution: null;
-  strCreativeCommonsConfirmed: 'No';
-  dateModified: '2017-09-07 21:42:09';
+  strCreativeCommonsConfirmed: string;
+  dateModified: string;
 }
 
 const cocktailsUrl = 'https://www.thecocktaildb.com/api/json/v1/1';
+const getIngredients = (data: CocktailDto) => {
+  const result: { [key: string]: string | null } = {};
+  Object.entries(data).forEach(([key, value]) => {
+    if (key.startsWith('strIngredient') && value !== null) {
+      console.log(key, value);
+      const num = Number(key.match(/\d+/)?.[0]);
+      result[value] = data[`strMeasure${num}`];
+    }
+  });
+  console.log(result);
+  return result;
+};
 
 export async function fetchAllCocktails(): Promise<Cocktail[]> {
   const url = `${cocktailsUrl}/search.php?s=`;
@@ -85,7 +97,7 @@ export async function findById(id: string): Promise<Cocktail | null> {
           name: cocktailDto.strDrink,
           imageUrl: cocktailDto.strDrinkThumb,
           recipe: cocktailDto.strInstructions,
-          ingredients: {},
+          ingredients: getIngredients(cocktailDto),
         };
         return cocktail;
       }) || [];

@@ -1,5 +1,66 @@
 .item {
+  width: 70%;
+  background: #453d4f;
+  font-family: 'Barbie Love';
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+
+  .focusHeader {
+    -webkit-animation: focusHeader 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: focusHeader 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes focusHeader {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focusHeader {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+    font-weight: 100;
+  }
+  h2:last-child {
+    text-align: end;
+    margin: 0 40px 40px;
+  }
   img {
-    width: 50%;
+    width: 100%;
+  }
+  p {
+    margin: 0 40px;
+    text-align: start;
+    font-family: 'Yanone Kaffeesatz';
+  }
+  ul {
+    list-style-type: none;
+    font-family: 'Yanone Kaffeesatz';
+    li {
+      text-align: start;
+    }
   }
 }
